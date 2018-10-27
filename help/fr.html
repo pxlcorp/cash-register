@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf8">
+    <style type="text/css">
+        body {
+            background: #EAEAEA;
+            -khtml-user-select: none;
+            cursor: default;
+        }
+
+        code {
+            -khtml-user-select: text;
+        }
+
+        hr {
+            border-top: 1px solid #cacaca;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page" class="container">
+		<h1>Cash Register</h1>
+
+		<hr>
+
+		<div class="well" style="padding:10px 10px 5px 5px; margin: 20px 30px 10px 10px;">
+			<ol type="1">
+				<li><a href="#intro">Introduction</a></li>
+				<li><a href="#first">Première étape: Connecter un scanner</a></li>
+				<li><a href="#second">Deuxième étape: Ajouter des articles</a></li>
+				<li><a href="#third">Troisième étape: Vendre</a></li>
+				<li><a href="#fourth">Quatrième étape: Gestion de l'argent</a></li>
+				<li><a href="#fifth">Cinquième étape: Relier les caisses enregistreuses</a></li>
+				<li><a href="#options">Options</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ol>
+		</div>
+
+		<hr>
+
+		<h3 id="intro">Introduction</h3>
+		<p>
+			La Pxl Caisse Enregistreuse vous permet de vendre des articles simplement et rapidement.
+		</p>
+
+		<hr>
+
+		<h3 id="first">Première étape: Connecter un scanner</h3>
+
+		<ul>
+			<li>Obtenez un scanner à main</li>
+			<li>Allez dans le menu <b><i>Options</i></b></li>
+			<li>Allez dans l'onglet <b><i>Scanner</i></b></li>
+			<li>Appuyez sur le bouton <b><i>Ajouter un scanner</i></b></li>
+			<li>Prenez le scanner à main</li>
+			<li>Appuyez sur le clique gauche de votre sourie en regardant la machine</li>
+			<li>Ajoutez un scanner fixe <b>(Optionnel)</b></li>
+			<ul>
+				<li>Obtenez un scanner fixe</li>
+				<li>Prenez le scanner à main</li>
+				<li>Appuyez sur le clique gauche de votre sourie en regardant le scanner fixe</li>
+			</ul>
+		</ul>
+
+		<hr>
+
+		<h3 id="second">Deuxième étape: Ajouter des articles</h3>
+
+		<ul>
+			<li>Trouvez un article à vendre</li>
+			<li>Prenez le scanner à main</li>
+			<li>Appuyez sur le clique gauche de votre sourie en regardant l'article</li>
+			<li>Changez les informations de l'article</li>
+			<ul>
+				<li>Allez dans le menu <b><i>Articles</i></b></li>
+				<li>Trouvez votre article dans la list <i>(classe<b>:</b>nom du model)</i></li>
+				<li>Appuyez sur le bouton de modification (le bouton bleu)</li>
+				<li>Entrez le nom et le prix</li>
+				<li>Appuyez sur <b><i>Confirmer</i></b></li>
+			</ul>
+		</ul>
+
+		<hr>
+
+		<h3 id="third">Troisième étape: Vendre</h3>
+
+		<ul>
+			<li>Scannez vos article</li>
+			<ul>
+				<li>Prenez le scanner à main</li>
+				<li>Appuyez sur le clique gauche de votre sourie en regardant un article</li>
+				<li>Ou passez l'article devant le scanner fixe</li>
+			</ul>
+			<li>Ajoutez un service <b>(Optionnel)</b></li>
+			<ul>
+				<li>Appuyez sur <b><i>Ajouter un service</i></b></li>
+				<li>Entrez la description du service et le prix</li>
+				<li>Appuyez sur <b><i>Confirmer</i></b></li>
+			</ul>
+			<li>Attendez que le client termine la transaction</li>
+			<ul>
+				<li>Il doit appuyer sur la touche utiliser en regardant la caisse (autre par que l'écran)</li>
+				<li>Il doit sélectionner le mode de paiement</li>
+				<li>Il doit confirmer</li>
+			</ul>
+			<li>Imprimez le reçu pour le client <b>(Optionnel)</b></li>
+		</ul>
+
+		<hr>
+
+		<h3 id="fourth">Quatrième étape: Gestion de l'argent</h3>
+
+		<ul>
+			<li>Allez dans le menu <b><i>Argent</i></b></li>
+			<li>Prendre l'argent <b>Cash</b></li>
+			<ul>
+				<li>Appuyez sur le bouton <b><i>Prendre l'argent</i></b></li>
+				<li>Entrez le montant désiré</li>
+			</ul>
+			<li>Distribuer le <b>Crédit</b><li>
+			<ul>
+				<li>Sélectionnez le joueur auquel vous voulez donner de l'argent en appuyant sur le bouton à droit de son nom</li>
+				<li>Sélectionnez le mode de transfert</li>
+				<li>Entrez le montant désiré</li>
+			</ul>
+			<li>Déposer de l'argent</li>
+			<ul>
+				<li>Appuyez sur le bouton <b><i>Déposer de l'argent</i></b></li>
+				<li>Sélectionnez le mode de dépôt</li>
+				<li>Entrez le montant désiré</li>
+			</ul>
+		</ul>
+
+		<hr>
+
+		<h3 id="fifth">Cinquième étape: Relier les caisses enregistreuses</h3>
+
+		<ul>
+			<li>Allez dans le menu Options</li>
+			<li>Allez dans l'onglet Server</li>
+			<li>Pour héberger un serveur</li>
+			<ul>
+				<li>Appuyez sur le bouton editer à droit du mot de passe</li>
+				<li>Entrez un mot de passe</li>
+			</ul>
+			<li>Pour rejoindre un serveur</li>
+			<ul>
+				<li>Appuyer sur le bouton Rejoindre un serveur</li>
+				<li>Entrez le nom et le mot de passe du serveur</li>
+			</ul>
+		</ul>
+
+		<hr>
+
+		<h3 id="options">Options</h3>
+
+		<ul>
+			<li>Gestion des accès</li>
+			<ul>
+				<li>Gérez les personnes autorisées à utiliser la machine.</li>
+				<li>La liste des personnes autorisées est partagé entre chaque machine reliée au même serveur.</li>
+			</ul>
+			<li>Option du serveur</li>
+			<ul>
+				<li>Le nom sur serveur sert d'identifiant pour les machines voulant se connecter à celui ci.</li>
+				<li>Lorsqu'il n'y a pas de mot de pass, le serveur ne peut plus être rejoint par une nouvelle machine</li>
+				<li>Pour vous connecter, entrez le nom et le mot de passe du serveur en question</li>
+			</ul>
+			<li>Gestion des scanners</li>
+			<ul>
+				<li>Enregistrer ou supprimer des scanners</li>
+			</ul>
+			<li>Les permissions</li>
+			<ul>
+				<li>Que le propriétaire peut modifier les permissions.</li>
+				<li>Permet de bloquer des accès pour les employés</li>
+			</ul>
+		</ul>
+
+		<hr>
+
+		<h3 id="faq">FAQ</h3>
+		<p>
+			Il n'y a pas encore de question.
+		</p>
+
+		<p>
+			Si vous avez des questions, allez <a onclick="cash_register.ask_question()">ici</a>.
+		</p>
+
+    </div>
+</body>
+
+</html> 
